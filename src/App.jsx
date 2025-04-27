@@ -8,7 +8,6 @@ import KnowledgeCenter from '@/modules/knowledge/pages/KnowledgeCenter';
 import ToolsPage from '@/modules/tools/pages/ToolsPage';
 import DashboardPage from '@/modules/dashboard/pages/DashboardPage';
 import NotFoundPage from '@/modules/core/pages/NotFoundPage';
-import ZaptBadge from '@/components/common/ZaptBadge';
 
 export default function App() {
   return (
@@ -24,7 +23,6 @@ export default function App() {
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
-      <ZaptBadge />
     </div>
   );
 }
