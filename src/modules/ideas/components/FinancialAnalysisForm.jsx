@@ -85,11 +85,11 @@ const FinancialAnalysisForm = ({ initialData = {}, onSubmit, onBack, isSubmittin
             disabled={isSubmitting}
           >
             <option value="">Pilih Estimasi Biaya</option>
-            <option value="very_low">Sangat Rendah (< Rp 10 Juta)</option>
+            <option value="very_low">Sangat Rendah (&lt; Rp 10 Juta)</option>
             <option value="low">Rendah (Rp 10 - 50 Juta)</option>
             <option value="medium">Sedang (Rp 50 - 200 Juta)</option>
             <option value="high">Tinggi (Rp 200 Juta - 1 Miliar)</option>
-            <option value="very_high">Sangat Tinggi (> Rp 1 Miliar)</option>
+            <option value="very_high">Sangat Tinggi (&gt; Rp 1 Miliar)</option>
           </select>
           {errors.startupCost && <p className="mt-1 text-sm text-red-600">{errors.startupCost}</p>}
         </div>
@@ -124,11 +124,11 @@ const FinancialAnalysisForm = ({ initialData = {}, onSubmit, onBack, isSubmittin
             disabled={isSubmitting}
           >
             <option value="">Pilih Estimasi Profit</option>
-            <option value="very_low">Sangat Rendah (< 5%)</option>
+            <option value="very_low">Sangat Rendah (&lt; 5%)</option>
             <option value="low">Rendah (5-15%)</option>
             <option value="medium">Sedang (15-30%)</option>
             <option value="high">Tinggi (30-50%)</option>
-            <option value="very_high">Sangat Tinggi (> 50%)</option>
+            <option value="very_high">Sangat Tinggi (&gt; 50%)</option>
           </select>
           {errors.estimatedProfit && <p className="mt-1 text-sm text-red-600">{errors.estimatedProfit}</p>}
         </div>
@@ -146,11 +146,11 @@ const FinancialAnalysisForm = ({ initialData = {}, onSubmit, onBack, isSubmittin
             disabled={isSubmitting}
           >
             <option value="">Pilih Estimasi Waktu</option>
-            <option value="very_fast">Sangat Cepat (< 6 bulan)</option>
+            <option value="very_fast">Sangat Cepat (&lt; 6 bulan)</option>
             <option value="fast">Cepat (6-12 bulan)</option>
             <option value="medium">Sedang (1-2 tahun)</option>
             <option value="slow">Lama (2-3 tahun)</option>
-            <option value="very_slow">Sangat Lama (> 3 tahun)</option>
+            <option value="very_slow">Sangat Lama (&gt; 3 tahun)</option>
           </select>
           {errors.breakEvenTime && <p className="mt-1 text-sm text-red-600">{errors.breakEvenTime}</p>}
         </div>
@@ -169,10 +169,10 @@ const FinancialAnalysisForm = ({ initialData = {}, onSubmit, onBack, isSubmittin
           >
             <option value="">Pilih Kebutuhan Pendanaan</option>
             <option value="bootstrapped">Bootstrap (Dana Pribadi)</option>
-            <option value="small_investment">Investasi Kecil (< Rp 100 Juta)</option>
+            <option value="small_investment">Investasi Kecil (&lt; Rp 100 Juta)</option>
             <option value="medium_investment">Investasi Sedang (Rp 100 - 500 Juta)</option>
             <option value="large_investment">Investasi Besar (Rp 500 Juta - 2 Miliar)</option>
-            <option value="very_large_investment">Investasi Sangat Besar (> Rp 2 Miliar)</option>
+            <option value="very_large_investment">Investasi Sangat Besar (&gt; Rp 2 Miliar)</option>
           </select>
           {errors.fundingNeeded && <p className="mt-1 text-sm text-red-600">{errors.fundingNeeded}</p>}
         </div>

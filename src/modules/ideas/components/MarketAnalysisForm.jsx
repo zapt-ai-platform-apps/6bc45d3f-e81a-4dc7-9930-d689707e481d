@@ -108,7 +108,7 @@ const MarketAnalysisForm = ({ initialData = {}, onSubmit, onBack }) => {
             <option value="stable">Stabil (0-5%)</option>
             <option value="growing">Bertumbuh (5-15%)</option>
             <option value="fast_growing">Pertumbuhan Cepat (15-30%)</option>
-            <option value="explosive">Pertumbuhan Eksplosif (>30%)</option>
+            <option value="explosive">Pertumbuhan Eksplosif (&gt;30%)</option>
           </select>
           {errors.marketGrowth && <p className="mt-1 text-sm text-red-600">{errors.marketGrowth}</p>}
         </div>
